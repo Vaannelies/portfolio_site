@@ -22,5 +22,17 @@ div.header{
 span{
   display:inline-block;
   vertical-align:middle;
+
 }
 
+div.gegevens{
+  width:100vw;
+  height: 100px;
+  font-family: courier;
+  background-color:black;
+  color:#48ff00;
+  vertical-align: middle;
+}
+span.gegevens{
+  margin-left:10px;
+}
