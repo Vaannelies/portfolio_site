@@ -5,5 +5,22 @@ body{
   color:white;
 }
 header{ text-align: center;
+
+  background-color:white;
+  color:blue;
+  height: 200px;
+  
+  
+  
+}
+
+div.header{
+
+  color:red;
+ 
+}
+span{
+  display:inline-block;
+  vertical-align:middle;
 }
 
