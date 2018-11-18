@@ -3,6 +3,8 @@
 body{ 
 	background-color: blue;
   color:white;
+  width: 100vw;
+  margin-left: auto;
 }
 header{ text-align: center;
 
@@ -26,13 +28,21 @@ span{
 }
 
 div.gegevens{
-  width:100vw;
+  border-width:1px;
+  border-color:#cecece;
+  border-style:solid;
+  border-top-width:10px;
+  margin-top: 20px;
+  margin-left:25vw;
+  width: 50vw;
   height: 100px;
   font-family: courier;
   background-color:black;
   color:#48ff00;
-  vertical-align: middle;
+  display:inline-block;
+
 }
 span.gegevens{
   margin-left:10px;
+  vertical-align:middle;
 }
