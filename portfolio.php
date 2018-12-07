@@ -14,7 +14,7 @@
   
   <?php
   $bericht = "";
-  $statusingevuld = false; //Dit gebruik ik omdat 'isset' niet doet wat ik wil dat het doet.
+  $statusingevuld = 0; //Dit gebruik ik omdat 'isset' niet doet wat ik wil dat het doet.
   if(isset($_POST["onderwerp"])){
 
 
@@ -24,18 +24,23 @@
       $berichttwee = "Je hebt dit ingevoerd: ".$gegeven;
 
 
-      if($gegeven == "achtergrond"){
-          $bericht = ">>> Hond";
-          $statusingevuld = true;
+      if($gegeven == "vooropleiding"){
+          $bericht = ">>> VOOROPLEIDING: <br><br> 2012 - 2018 <br>    Krimpenerwaard College <br>    Gymnasium diploma <br> C&M - E&M profiel";
+          $statusingevuld = 1;
 
 
       }
-      elseif ($gegeven == "hobbys"){
-          $bericht = ">>> Kat";
-          $statusingevuld = true;
+      elseif ($gegeven == "skills"){
+          $bericht = ">>> SKILLS: <br><br> Programmeren - o.a. in PHP en Javascript, al ben ik nog aan het leren. <br>
+                                       Creatieve oplossingen bedenken <br>
+                                       Goed kunnen verwoorden of illustreren wat ik bedoel
+                                       
+                                       
+                    <br><br> Maar ook: <br> Stress handelen, positiviteit brengen, snel dingen aanleren, luisteren en doorzetten. <br> ";
+          $statusingevuld = 2;
       }
       else {
-          $statusingevuld = false;
+          $statusingevuld = 0;
       }
   }
   ?>
@@ -49,12 +54,21 @@
     </div>
   </header> <!-- tot hier-->
 
+
+
+
   <!-- verdere inhoud van de pagina -->
 
+
+
+
+
   <div class="main">
+
+<!-- Hieronder vind je wel 'opdrachtprompt venster' in beeld komt te staan, afhankelijk van de waarde van $statusingevuld. Die waarde wordt bepaald door wat de gebruiker heeft ingevuld in het formulier. -->
     <br>
     <?php /*/ if(isset($_POST["onderwerp"])){ /*/
-          if($statusingevuld == true){?>
+          if($statusingevuld == 1){?>
 		  <div class="gegevensextra">
 
               <span class="gegevens">
@@ -63,13 +77,14 @@
 
                >> NAAM: Annelies <br>
                >> GEBOORTEDATUM: 10 juli 2000 <br>
+               >> SCHOOL: Hogeschool Rotterdam <br>
                >> OPLEIDING: Creative Media and Game Technologies <br>
                >> LEERJAAR: 1 <br><br>
 
                <form method="post" action="">
 
                >> WAAR WIL JE MEER OVER WETEN? <br>
-               >> TYPE achtergrond OF hobby's
+               >> TYPE vooropleiding OF skills
                <input type="text" name="onderwerp">
                <button type="submit"> Verzenden </button>
                </form
@@ -77,8 +92,33 @@
 
                </span>
 		   		  <!-- hieronder zie je een stukje php dat test of er een post is gegeven  -->
-    <?php } else {
-    ?>    <div class="gegevens">
+    <?php } elseif($statusingevuld == 2){?>
+              <div class="gegevensextra2">
+
+              <span class="gegevens">
+
+              <br>
+
+               >> NAAM: Annelies <br>
+               >> GEBOORTEDATUM: 10 juli 2000 <br>
+               >> SCHOOL: Hogeschool Rotterdam <br>
+               >> OPLEIDING: Creative Media and Game Technologies <br>
+               >> LEERJAAR: 1 <br><br>
+
+               <form method="post" action="">
+
+               >> WAAR WIL JE MEER OVER WETEN? <br>
+               >> TYPE vooropleiding OF skills
+               <input type="text" name="onderwerp">
+               <button type="submit"> Verzenden </button>
+               </form
+                  <?php echo "$bericht";?>
+
+               </span>
+                  <!-- hieronder zie je een stukje php dat test of er een post is gegeven  -->
+                  <?php } else {
+                  ?>
+              <div class="gegevens">
 
 		      <span class="gegevens">
 
@@ -86,13 +126,14 @@
 
 		       >> NAAM: Annelies <br>
 		       >> GEBOORTEDATUM: 10 juli 2000 <br>
+               >> SCHOOL: Hogeschool Rotterdam <br>
 		       >> OPLEIDING: Creative Media and Game Technologies <br>
 		       >> LEERJAAR: 1 <br><br>
 
 			   <form method="post" action="">
 
 		       >> WAAR WIL JE MEER OVER WETEN? <br>
-		       >> TYPE achtergrond OF hobby's
+		       >> TYPE vooropleiding OF skills
 			   <input type="text" name="onderwerp">
 			   <button type = "submit"> Verzenden </button>
 		       </form
@@ -104,10 +145,15 @@
 
 		  </div>
 
-	</div>
+
+
+     <img src="paraplu.png">
+
+
+  </div>
  
   
- <script src="myscripts.js"></script> 
+
 </body>
 
 
@@ -119,3 +165,5 @@ Test test
 
 
 </html>
+<!--Op de middelbare school ben ik 6 jaar lid geweest van de leerlingenraad waarvan ik 4 jaar de secretaris was.
+Ik heb activiteiten georganiseerd en gerealiseerd zoals oliebollen verkopen op school, binnen school anoniem een roos voor iemand kunnen bestellen en laten bezorgen op valentijnsdag,-->

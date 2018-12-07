@@ -46,7 +46,7 @@ div.gegevens{
   margin-top: 20px;
   margin: 20px auto;
   width: 700px;
-  height: 160px;
+  height: 180px;
   font-family: courier;
   background-color:black;
   color:#48ff00;
@@ -61,13 +61,29 @@ div.gegevensextra{
   margin-top: 20px;
   margin: 20px auto;
   width: 700px;
-  height: 180px;
+  height: 280px;
   font-family: courier;
   background-color:black;
   color:#48ff00;
 
+}
+
+div.gegevensextra2 {
+  border-width: 3px;
+  border-color: #cecece;
+  border-style: solid;
+  border-top-width: 10px;
+  margin-top: 20px;
+  margin: 20px auto;
+  width: 700px;
+  height: 340px;
+  font-family: courier;
+  background-color: black;
+  color: #48ff00;
 
 }
+
+
 span.gegevens{
   margin-left:10px;
   vertical-align:middle;
