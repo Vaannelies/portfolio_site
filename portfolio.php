@@ -68,7 +68,7 @@
 <!-- Hieronder vind je wel 'opdrachtprompt venster' in beeld komt te staan, afhankelijk van de waarde van $statusingevuld. Die waarde wordt bepaald door wat de gebruiker heeft ingevuld in het formulier. -->
     <br>
     <?php /*/ if(isset($_POST["onderwerp"])){ /*/
-          if($statusingevuld == 1){?>
+          if($statusingevuld == 1){?>   <!-- Dus er is ingevuld 'vooropleiding'. -->
 		  <div class="gegevensextra">
 
               <span class="gegevens">
@@ -84,15 +84,15 @@
                <form method="post" action="">
 
                >> WAAR WIL JE MEER OVER WETEN? <br>
-               >> TYPE vooropleiding OF skills
+               >> VUL IN vooropleiding OF skills
                <input type="text" name="onderwerp">
                <button type="submit"> Verzenden </button>
                </form
-                <?php echo "$bericht";?>
+                <?php echo "$bericht";?> <!-- Hier wordt info gegeven over mijn vooropleiding. -->
 
                </span>
-		   		  <!-- hieronder zie je een stukje php dat test of er een post is gegeven  -->
-    <?php } elseif($statusingevuld == 2){?>
+
+    <?php } elseif($statusingevuld == 2){?>  <!-- Dus er is ingevuld 'skills'. -->
               <div class="gegevensextra2">
 
               <span class="gegevens">
@@ -108,15 +108,15 @@
                <form method="post" action="">
 
                >> WAAR WIL JE MEER OVER WETEN? <br>
-               >> TYPE vooropleiding OF skills
+               >> VUL IN vooropleiding OF skills
                <input type="text" name="onderwerp">
                <button type="submit"> Verzenden </button>
                </form
-                  <?php echo "$bericht";?>
+                  <?php echo "$bericht";?>  <!-- Hier vertel ik iets over mijn skills. -->
 
                </span>
-                  <!-- hieronder zie je een stukje php dat test of er een post is gegeven  -->
-                  <?php } else {
+
+                  <?php } else { /*/ Dus als er geen input is gegeven in het tekstveldje /*/
                   ?>
               <div class="gegevens">
 
@@ -133,7 +133,7 @@
 			   <form method="post" action="">
 
 		       >> WAAR WIL JE MEER OVER WETEN? <br>
-		       >> TYPE vooropleiding OF skills
+		       >> VUL IN vooropleiding OF skills
 			   <input type="text" name="onderwerp">
 			   <button type = "submit"> Verzenden </button>
 		       </form
