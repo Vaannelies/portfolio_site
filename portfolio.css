@@ -110,3 +110,25 @@ button{
   font-family: courier;
   border: 1px solid #48ff00;
 }
+
+button:hover{
+background-color: #48ff00;
+  color:black;
+
+
+}
+
+input{
+  background-color:black;
+  border-color: #48ff00;
+  box-shadow: 0 0 4px 0px #48ff00;;
+  color: #48ff00;
+  font-family: courier;
+  width:120px;
+}
+
+input:hover{
+
+  box-shadow: 0 0 10px 0px #ffffff;
+;
+}
