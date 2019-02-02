@@ -38,7 +38,7 @@ span{
 }
 
 .main {
-  width: 1000px;
+
   height: 1200px;
   background-color: #00001b;
   border-left: 2px solid;
@@ -46,7 +46,7 @@ span{
 }
 
 .alles{
-
+  width:55vw;
   margin-top:40px;
   box-shadow: -5px 0 30px -5px #ffffff, 5px 0 30px -5px #ffffff;
 	
@@ -58,8 +58,8 @@ div.gegevens{
   border-top-width:10px;
   margin-top: 20px;
   margin: 20px auto;
-  width: 700px;
-  height: 180px;
+  width: 66%;
+  padding-bottom:15px;
   font-family: courier;
   background-color:black;
   color:#48ff00;
@@ -73,8 +73,8 @@ div.gegevensextra{
   border-top-width:10px;
   margin-top: 20px;
   margin: 20px auto;
-  width: 700px;
-  height: 280px;
+  width: 66%;
+  padding-bottom:15px;
   font-family: courier;
   background-color:black;
   color:#48ff00;
@@ -88,8 +88,8 @@ div.gegevensextra2 {
   border-top-width: 10px;
   margin-top: 20px;
   margin: 20px auto;
-  width: 700px;
-  height: 340px;
+  width: 66%;
+  padding-bottom:15px;
   font-family: courier;
   background-color: black;
   color: #48ff00;
@@ -100,4 +100,5 @@ div.gegevensextra2 {
 span.gegevens{
   margin-left:10px;
   vertical-align:middle;
+
 }
