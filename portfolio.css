@@ -45,7 +45,7 @@ span{
   border-right: 2px solid;
 }
 
-.alles{
+.content{
   width:55vw;
   margin-top:40px;
   box-shadow: -5px 0 30px -5px #ffffff, 5px 0 30px -5px #ffffff;
@@ -101,4 +101,12 @@ span.gegevens{
   margin-left:10px;
   vertical-align:middle;
 
+}
+
+button{
+  background-color: black;
+  border-radius: 1px;
+  color:#48ff00;
+  font-family: courier;
+  border: 1px solid #48ff00;
 }

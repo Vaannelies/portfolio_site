@@ -12,7 +12,7 @@
 
 <body>
   <div class="center" style="display:flex; justify-content:center;">
-      <div class="alles" >
+      <div class="content" >
           <?php
           $bericht = "";
           $statusingevuld = 0; //Dit gebruik ik omdat 'isset' niet doet wat ik wil dat het doet.
@@ -87,7 +87,7 @@
                        >> WAAR WIL JE MEER OVER WETEN? <br>
                        >> VUL IN vooropleiding OF skills
                        <input type="text" name="onderwerp">
-                       <button type="submit"> Verzenden </button>
+                       <button type="submit"> OK </button>
                        </form
                         <?php echo "$bericht";?> <!-- Hier wordt info gegeven over mijn vooropleiding. -->
 
@@ -112,7 +112,7 @@
                        >> WAAR WIL JE MEER OVER WETEN? <br>
                        >> VUL IN vooropleiding OF skills
                        <input type="text" name="onderwerp">
-                       <button type="submit"> Verzenden </button>
+                       <button type="submit"> OK </button>
                        </form
                           <?php echo "$bericht";?>  <!-- Hier vertel ik iets over mijn skills. -->
 
@@ -138,7 +138,7 @@
                        >> WAAR WIL JE MEER OVER WETEN? <br>
                        >> VUL IN vooropleiding OF skills
                        <input type="text" name="onderwerp">
-                       <button type = "submit"> Verzenden </button>
+                       <button type = "submit"> OK </button>
                        </form
 
 
