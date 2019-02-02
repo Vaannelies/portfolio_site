@@ -12,7 +12,7 @@
 
 <body>
   <div class="center" style="display:flex; justify-content:center;">
-      <div class="alles">
+      <div class="alles" >
           <?php
           $bericht = "";
           $statusingevuld = 0; //Dit gebruik ik omdat 'isset' niet doet wat ik wil dat het doet.
@@ -50,7 +50,7 @@
             <div class="header"><span>
 
                <h1>  Annelies </h1> </span>
-               <h2>  - Een enthousiaste student aan de Hogeschool Rotterdam - </h2>
+               <h2>  Creative Media & Game Technologies </h2>
 
             </div>
           </header> <!-- tot hier-->
