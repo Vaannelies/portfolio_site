@@ -50,7 +50,7 @@
             <div class="header"><span>
 
                <h1>  Annelies </h1> </span>
-               <h2>  Creative Media & Game Technologies </h2>
+               <h2>  Creative Media and Game Technologies </h2>
 
             </div>
           </header> <!-- tot hier-->
