@@ -1,16 +1,24 @@
+body{
+  background-image:url("milky-way-2971669_1920.jpg");
+  background-attachment:fixed;
 
 
-body{ 
-	background-image:url("StockSnap_FR57CSWKGZ.jpg");
-	
-  color:blue;
-  width: 1000px;
- padding-left: 20vw;
-  padding-right: 20vw;
+}
+
+
+div.center{
+
+	display:flex;
+    justify-content:flex-end;
+
+
+
+
+
 }
 header{ text-align: center;
 
-  background-color:blue;
+  background-color: #00001b;
   color:white;
   height: 200px;
   
@@ -18,8 +26,8 @@ header{ text-align: center;
   
 }
 
-div.header{
 
+div.header{
   font-family: arial;
  
 }
@@ -29,13 +37,18 @@ span{
 
 }
 
-.main{
-	width: 1000px;
-	height: 100vw;
-	background-color: white;
-	
-	
-	
+.main {
+  width: 1000px;
+  height: 1200px;
+  background-color: #00001b;
+  border-left: 2px solid;
+  border-right: 2px solid;
+}
+
+.alles{
+
+  margin-top:40px;
+  box-shadow: -5px 0 30px -5px #ffffff, 5px 0 30px -5px #ffffff;
 	
 }
 div.gegevens{
