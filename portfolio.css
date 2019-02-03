@@ -1,18 +1,17 @@
 body{
   background-image:url("milky-way-2971669_1920.jpg");
-  height:100vh;
   justify-content:center;
   display:flex;
-  background-repeat: no-repeat;
-
+  background-attachment: fixed;
 
 }
 
 
 div.center{
-    position:fixed;
+
 	display:flex;
     justify-content:flex-end;
+  align-items:center;
 
 
 
@@ -42,7 +41,7 @@ span{
 
 .main {
 
-  height: 700px;
+  padding-bottom:50px;
   background-color: #00001b;
   border-left: 2px solid;
   border-right: 2px solid;
